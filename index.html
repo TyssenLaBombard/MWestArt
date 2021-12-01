@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+	<link rel="stylesheet" href="style.css">
+	<title> MWestArt </title>
+</head>
+<Body>
+
+<div class="topnav">
+	<a class="active" href="#index.html">Home</a>
+	<a href="pixelArt.html">Pixel Art</a>
+	<a href="lifeDrawing.html">Life Drawing</a>
+	<a href="3DRenders.html">3D Renders</a>
+	<p style="position:absolute;font-size:30px;color:white;margin:6px 850px;text-align:center;">Mike West Art </p>
+	<button onclick="window.location.href='https://www.paypal.com/us/home';" class="button button1"> <span>Donate</span></button>
+</div>
+<div class="icon-bar"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<a href="https://www.facebook.com/profile.php?id=100015208756971" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a> 
+	<a href="https://www.instagram.com/mike.west30/"target="_blank" class="instagram"><i class="fa fa-instagram"></i></a> 
+	<a href="https://www.google.com/"target="_blank" class="google"><i class="fa fa-google"></i></a> 
+	<a href="https://www.linkedin.com/"target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	<a href="https://www.youtube.com/"target="_blank" class="youtube"><i class="fa fa-youtube"></i></a> 
+
+
+</div>
+
+<div class="MikePic">
+<img src="Mike.jpg" alt="Mike?"style="width:300px;height:350px;margin: 30px; position:absolute;right:1500px">
+</div>
+<div class="aboutMe">
+<p style="text-align:left;font-size:40px;"><strong>Who Is Mike West?</strong></p>
+<p>Hello, my name is Michael West a game design major at Fitchburg state.<br>
+Most of my work primarily revolves around creating models,concepts,<br>
+ and designs, for game characters. In my free time I like to <br>
+ hangout with friends, work on personal projects, play guitar,<br>
+ and read. I started drawing seriously around 13 years old. <br>
+ </p>
+
+</div>
+
+<h2 style="position:absolute;right:375px;">Slideshow Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="final_Boss.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="CharacterIdleAnim1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="characterV5.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="characterV13.png" style="width:100%">
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="final_Boss.png" style="width:100%" onclick="currentSlide(1)" alt="Final Boss Concept">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="CharacterIdleAnim1.png" style="width:100%" onclick="currentSlide(2)" alt="Character Idle Animation Frame">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="characterV5.png" style="width:100%" onclick="currentSlide(3)" alt="Character V5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="characterV13.png" style="width:100%" onclick="currentSlide(4)" alt="Character V13">
+    </div>
+  </div>
+</div>
+<div class="pixelArtBody">
+<p style="position:absolute;top:500px;margin:40px 90px;font-size:35px;">Pixel Art History <p>
+<p style="position: absolute; top:600px;right:970px;font-size:20px;">I started doing basic forms of pixel art around my sophomore year of high school.<br>
+ Mostly just some ideas and cool things that I learned how to do on my own.<br>
+ Some of my earliest concepts led me to different interests in terms of the various models I liked creating.<br>
+ Currently almost all games I make or create ideas for are pixel art based.<br>
+ </p>
+</div>
+<div class="lifeDrawingBody">
+<p style="position:absolute;top:800px;margin:40px 90px;font-size:35px;">Life Drawing History <p>
+<p style="position:absolute;top:900px; right:1030px; font-size:20px;">I only started life drawing this past semester, but I have grown to love it a lot.<br>
+Though it was intimidating working with nude models to start the lessons it taught me in <br>
+working with pastels and different shading has been tremendous. The work in life drawing <br>
+does not directly relate to my primary work in pixel art but it does make me a better artist overall.<br>
+</p>
+</div>
+<div class="3DRendersBody">
+<p style="position:absolute;top:1100px;margin:40px 90px;font-size:35px;">3D Renders History <p>
+<p style="position: absolute; top: 1200px; right:1070px; font-size: 20px;">I started doing 3D renders during my senior year of high school. After working <br> 
+with pixel art for two years I got a found some software that could render and assist <br>
+in modeling 3D figures and designs. This gave way to a whole new avenue for me and was a <br>
+lot of fun learning how to do.
+</p>
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+</body>
+</html>
